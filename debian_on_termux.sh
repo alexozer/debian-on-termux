@@ -41,7 +41,7 @@ $DO_FIRST_STAGE && {
 apt update 2>&1 | filter
 DEBIAN_FRONTEND=noninteractive apt -y install perl proot 2>&1 | filter                              
 rm -rf debootstrap
-wget http://http.debian.net/debian/pool/main/d/debootstrap/debootstrap_1.0.95.tar.gz -O - | tar xfz -
+wget https://launchpad.net/ubuntu/+archive/primary/+files/debootstrap_1.0.95.tar.gz -O - | tar xfz -
 ln -nfs debootstrap-1.0.95 debootstrap
 cd debootstrap
 #
